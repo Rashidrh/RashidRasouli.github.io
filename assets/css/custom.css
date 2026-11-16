@@ -1,0 +1,110 @@
+/* Custom styles for Rashid Rasouli's MyResume portfolio */
+
+.hero .social-links a {
+  margin-right: 18px;
+}
+
+.technical-skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.technical-skills-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 58px;
+  padding: 12px 14px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+  border-radius: 8px;
+  background: var(--surface-color);
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+.technical-skills-list li i {
+  color: var(--accent-color);
+  font-size: 22px;
+  flex: 0 0 24px;
+}
+
+.skill-group-title {
+  font-size: 19px;
+  font-weight: 700;
+  margin: 0 0 16px;
+  color: var(--heading-color);
+}
+
+.skills-note,
+.portfolio-note,
+.services-note {
+  margin-top: 18px;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  font-size: 13px;
+}
+
+.resume-download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 18px;
+  padding: 12px 22px;
+  border-radius: 5px;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.resume-download-btn:hover {
+  background: color-mix(in srgb, var(--accent-color), #000 12%);
+  color: var(--contrast-color);
+}
+
+.resume-download-btn i {
+  font-size: 18px;
+}
+
+.resume-download-btn.secondary {
+  margin-left: 10px;
+  background: var(--heading-color);
+}
+
+.resume .resume-item ul {
+  margin-bottom: 0;
+}
+
+.services .service-item.service-static {
+  cursor: default;
+}
+
+.services .service-item.service-static h3 {
+  cursor: default;
+}
+
+.services .service-item.service-static:hover {
+  transform: translateY(-3px);
+}
+
+.contact-cta {
+  margin-top: 14px;
+}
+
+@media (max-width: 575px) {
+  .technical-skills-list {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-download-btn.secondary {
+    margin-left: 0;
+  }
+
+  .contact-cta .resume-download-btn {
+    margin: 8px 4px;
+  }
+}
